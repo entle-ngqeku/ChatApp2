@@ -8,11 +8,12 @@ import java.util.Scanner;
 
 /**
  *
+ *
  * @author Student
  */
 public class Login {
 
-    private String storedUsername;
+    private String storedUsername;   
     private String storedPassword;
     private String storedPhoneNumber;
 
@@ -91,7 +92,7 @@ public class Login {
             else {
                 // Store user details
                 storedUsername = username;
-                storedPassword = password;
+                  storedPassword = password;
                 storedPhoneNumber = phoneNumber;
                 registrationSuccessful = true;
                 System.out.println("User registered successfully.");
