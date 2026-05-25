@@ -8,8 +8,8 @@ import org.json.JSONObject;
  *
  * @author Student
  */
-public class Message {
-    
+    public class Message {
+
     // Fields - the data a message holds
     private String messageID;        // 10-digit auto-generated
     private int messageNumber;       // from loop counter
