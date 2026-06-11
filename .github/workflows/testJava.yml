@@ -6,16 +6,16 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Java CI with Maven
+name: Java CI 
 
 on:
   push:
     branches: 
-	- main
-	- Part2-SendMessages
+		- "main"
+		- "Part2-SendMessages"
   pull_request:
     branches: 
-	- 
+		- "main"
 
 jobs:
   build:
