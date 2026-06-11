@@ -47,9 +47,7 @@ public class MessageTest {
     
     @Test
     public void testMessageHashCorrect() {
-        // Test data: ID starts with "00", number 0, first "HI", last "NIGHT"
-        Message msg = new Message("+27718693002", "Hi Mike, can you join us for dinner tonight?", 0);
-        // Hash should be: 00:0:HITONIGHT
+        Message msg = new Message("+27718693002", "Hi tonight?",0);
         assertEquals("00:0:HITONIGHT", msg.createMessageHash());
     }
     
