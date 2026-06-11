@@ -44,10 +44,6 @@ public class Message {
         this.messageHash = createMessageHash();
     }
 
-    public Message(String string, String hi_Mike_can_you_join_us_for_dinner_tonigh, String test, int i) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
     /**
      * Generates random 10-digit message ID.
      */

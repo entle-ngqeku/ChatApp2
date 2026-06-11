@@ -16,7 +16,9 @@ public class Main {
         String username = "";
         String password = "";
         String phone = "";
+        @SuppressWarnings("unused")
         String firstName = "";
+        @SuppressWarnings("unused")
         String lastName = "";
         // =========================
         // USER REGISTRATION SECTION

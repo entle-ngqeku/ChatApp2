@@ -4,8 +4,6 @@
  */
 package com.mycompany.chatapp2;
 
-import java.util.Scanner;
-
 /**
  *
  *
@@ -15,6 +13,7 @@ public class Login {
 
     private String storedUsername;   
     private String storedPassword;
+    @SuppressWarnings("unused")
     private String storedPhoneNumber;
 
     //-------------------------
@@ -65,38 +64,24 @@ public class Login {
     //-------------------------
     public String registerUser(String username, String password, String phoneNumber) {
 
-        Scanner input = new Scanner(System.in);
-        
-        boolean registrationSuccessful = false;
-
-        while (!registrationSuccessful) {
-            // Username
-            if (!checkUsername(username)) {
-                System.out.println("Username is not correctly formatted.");
-                System.out.print("Enter a username: ");
-                username = input.nextLine();
-            }
-            // Password
-            else if (!checkPasswordComplexity(password)) {
-                System.out.println("Password does not meet complexity requirements.");
-                System.out.print("Enter a password: ");
-                password = input.nextLine();
-            }
-            // Phone number
-            else if (!checkCellPhoneNumber(phoneNumber)) {
-                System.out.println("Phone number is incorrectly formatted.");
-                System.out.print("Enter your South African phone number (+27...): ");
-                phoneNumber = input.nextLine();
-            }
-            // If all validations pass
-            else {
-                // Store user details
-                storedUsername = username;
-                  storedPassword = password;
-                storedPhoneNumber = phoneNumber;
-                registrationSuccessful = true;
-                System.out.println("User registered successfully.");
-            }
+        if (!checkUsername(username)) {
+            return "Username is not correctly formatted.";
+        }
+        // Password
+        if (!checkPasswordComplexity(password)) {
+            return "Password does not meet complexity requirements.";
+        }
+        // Phone number
+        if (!checkCellPhoneNumber(phoneNumber)) {
+            return "Phone number is incorrectly formatted.";
+        }
+        // If all validations pass
+        else {
+            // Store user details
+            storedUsername = username;
+            storedPassword = password;
+            storedPhoneNumber = phoneNumber;
+            System.out.println("User registered successfully.");
         }
         
         return "Registration complete.";
