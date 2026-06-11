@@ -339,13 +339,7 @@ getMessageText()
 getMessageHash()
 ```
 
-These methods allow controlled access to private message attributes.
-
----
-
-## Author
-
-Student
+These methods allow controlled access to private message attributes
 
 ## Class Name
 
@@ -354,10 +348,3 @@ Message.java
 ## Package
 
 com.mycompany.chatapp2
-
-      
-## User Login
-- After successful registration, the user can log in by providing:
-- The system will authenticate the credentials and provide feedback on the success or failure of the login attempt.
-The username (e.g., ky_1)
-The password (e.g., Ch&&sec@ke99) 
